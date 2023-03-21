@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+				<h1 class="text-center">CREATE NEW STUDENT </h1>
+					<div class="card-body">
+						<form th:action="@{/students}" th:object="${student}" method="POST">
+							<div class="form-group">
+								<label>STUDENT FIRSTNAME</label>
+								<!--TH FIELD IS IMPORTANT  -->
+									<input type="text" name="firstname" 
+									     th:field="*{firstname}" class="form-control" placeholder="ENTER THE FIRSTNAME"/>
+							
+							</div>
+							<div class="form-group">
+								<label>STUDENT LASTNAME</label>
+								<!--TH FIELD IS IMPORTANT  -->
+									<input type="text" name="lastname" 
+									     th:field="*{lastname}" class="form-control" placeholder="ENTER THE LASTNAME"/>
+							
+							</div>
+							<div class="form-group">
+								<label>STUDENT EMAIL</label>
+								<!--TH FIELD IS IMPORTANT  -->
+									<input type="text" name="email" 
+									     th:field="*{email}" class="form-control" placeholder="ENTER THE EMAIL"/>
+							
+							</div>
+							<div class="footer-body">
+								<button type="submit" class="btn btn-primary">
+								SUBMIT
+								</button>
+							
+							</div>
+						
+						
+						
+						</form>
+					
+					</div>
+			
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
