@@ -4,8 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.4</version>
+		<artifactId>Student-management-system</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+                <packaging>jar</packaging>
+
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mohan</groupId>
